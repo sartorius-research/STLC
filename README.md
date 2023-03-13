@@ -1,16 +1,15 @@
 # Simulation Testbed for Liquid Chromatography
-The Simulation Testbed for Liquid Chromatography (STLC) package implements variations of the general rate model. The aim is to provide a basis for the development of an easy to use package for chromatography modeling in python. 
+The Simulation Testbed for Liquid Chromatography (STLC) package implements variations of the general rate model. The aim is to provide a basis for the development of an easy to use package for chromatography modeling in Python. 
 
 
 ## Ongoing development
----
 
-This is research software that is still under development.
+Please be aware that this is software created as part of research and is provided as is.
 
 
 ## Install
----
-You can install by cloning repo and run:
+
+You can install by cloning the repository and running:
 
 ```
 	> pip install setuptools
@@ -18,10 +17,10 @@ You can install by cloning repo and run:
 	> pip install -e ./
 ```
 
-from project the root.
+from the project root.
 
 ## Usage
----
+Examples are provided in the examples directory. A model may also be instantiated and run as follows:
 
 ```python
 	from stlc import lkm
@@ -44,12 +43,25 @@ from project the root.
 	model = lkm.LumpedKineticModel(n, ne, zl, [parameters0])
 	y = lkm.solve(model, tmax, dt)
 ```
+## Cite
+```
+@article{ANDERSSON2023108068,
+title = {Numerical simulation of the general rate model of chromatography using orthogonal collocation},
+author = {David Andersson and Rickard Sjögren and Brandon Corbett},
+journal = {Computers & Chemical Engineering},
+volume = {170},
+pages = {108068},
+year = {2023},
+doi = {https://doi.org/10.1016/j.compchemeng.2022.108068},
+}
+```
 
+## References
+Code implementing Orthogoanl collocation discretization: Larry C. Young 2019, [Orthogonal collocation revisited](https://doi.org/10.1016/j.cma.2018.10.019), Computer Methods in Applied Mechanics and Engineering.
 
 ## License
----
 
 Released under GPL v3. License (see LICENSE.txt):
 
-Copyright (C) 2022 Sartorius
+Copyright (C) 2023 Sartorius
 
