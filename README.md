@@ -57,7 +57,7 @@ doi = {https://doi.org/10.1016/j.compchemeng.2022.108068},
 ```
 
 ## References
-Code implementing Orthogoanl collocation discretization: Larry C. Young 2019, [Orthogonal collocation revisited](https://doi.org/10.1016/j.cma.2018.10.019), Computer Methods in Applied Mechanics and Engineering.
+Code implementing orthogonal collocation discretization: Larry C. Young 2019, [Orthogonal collocation revisited](https://doi.org/10.1016/j.cma.2018.10.019), Computer Methods in Applied Mechanics and Engineering.
 
 ## License
 
